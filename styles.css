@@ -1,4 +1,73 @@
 /* This is your CSS files */
 body {
-    color: black
+    font-family: 'Roboto', sans-serif;
+}
+
+.site-header {
+    background-color: #dc4c3e;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px 4px 0px 0px;
+    padding: 0px 32px 0px 32px;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.hamburger {
+    border: none;
+    background-color: #dc4c3e;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    background-color: #ffffff33;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.search-bar img {
+    margin: 4px;
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    margin-right: 8px;
+}
+
+input::placeholder {
+    color: #ffffffCC;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.task-counter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.task-counter p {
+    color: #ffffff;
+}
+
+.site-main {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.page {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
 }
