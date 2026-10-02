@@ -10,7 +10,7 @@ body {
     justify-content: space-between;
     align-items: center;
     border-radius: 4px 4px 0px 0px;
-    padding: 0px 32px 0px 32px;
+    padding: 0px 32px 0px 40px;
 }
 
 .left-content {
@@ -35,13 +35,14 @@ body {
 }
 
 .search-bar img {
-    margin: 4px;
+    margin: 4px 4px 4px 8px;
 }
 
 .search-bar input {
     border: none;
     background: none;
     margin-right: 8px;
+    padding: 4px;
 }
 
 input::placeholder {
@@ -59,11 +60,63 @@ input::placeholder {
 
 .task-counter p {
     color: #ffffff;
+    font-weight: 300;
+    font-size: 14px;
 }
 
 .site-main {
     display: grid;
     grid-template-columns: 300px 1fr;
+}
+
+.navbar {
+    background-color: #fefbf2;
+    width: 300px;
+}
+
+.nav-items li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin: 8px;
+    border-radius: 8px;
+}
+
+.nav-items li:hover {
+    background-color: #ffffffCC;
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        display: none;
+    }
+}
+
+.main-text {
+    font-size: 14px;
+    color: #000000;
+}
+
+#current-tab {
+    font-weight: bold;
+} 
+
+.task-count {
+    font-size: 12px;
+    color: #7e7d79;
+}
+
+.main-content {
+    padding: 16px 32px 0px 40px
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.task-list {
+    list-style: none;
 }
 
 .page {
