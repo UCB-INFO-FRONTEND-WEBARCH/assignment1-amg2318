@@ -11,6 +11,7 @@ body {
     align-items: center;
     border-radius: 4px 4px 0px 0px;
     padding: 0px 32px 0px 40px;
+    margin-left: 10px;
 }
 
 .left-content {
@@ -43,6 +44,11 @@ body {
     background: none;
     margin-right: 8px;
     padding: 4px;
+}
+
+.search-bar input:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 input::placeholder {
@@ -79,7 +85,8 @@ input::placeholder {
     flex-direction: row;
     align-items: center;
     gap: 8px;
-    margin: 8px;
+    padding: 0px 8px 0px 8px;
+    margin-right: 8px;
     border-radius: 8px;
 }
 
@@ -108,15 +115,80 @@ input::placeholder {
 }
 
 .main-content {
-    padding: 16px 32px 0px 40px
+    padding: 16px 32px 16px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-h1 {
+main-content h1 {
     font-size: 20px;
 }
 
 .task-list {
+    left: 0px;
     list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.task {
+    padding: 16px 0px 16px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: lightgray;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.task input{
+    opacity: 0;
+    cursor: pointer;
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+}
+
+.checkmark {
+    border-radius: 100px;
+    margin-right: 16px;
+    height: 24px;
+    width: 24px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #7e7d79;
+    flex-shrink: 0;
+}
+
+.task:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.task input:checked ~ .checkmark {
+  background-color: #7e7d7980;
+}
+
+.checkmark:after {
+  content: "";
+  display: none;
+}
+
+.task input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.task .checkmark:after {
+    position: relative;
+    top: 4px;
+    left: 8px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
 }
 
 .page {
