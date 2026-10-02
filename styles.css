@@ -1,4 +1,4 @@
-/* This is your CSS files */
+/* This is your CSS file */
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -11,7 +11,6 @@ body {
     align-items: center;
     border-radius: 4px 4px 0px 0px;
     padding: 0px 32px 0px 40px;
-    margin-left: 10px;
 }
 
 .left-content {
@@ -121,7 +120,7 @@ input::placeholder {
     align-items: flex-start;
 }
 
-main-content h1 {
+.main-content h1 {
     font-size: 20px;
 }
 
@@ -141,6 +140,7 @@ main-content h1 {
     border-bottom: lightgray;
     border-bottom-width: 1px;
     border-bottom-style: solid;
+    font-size: 14px;
 }
 
 .task input{
@@ -154,8 +154,8 @@ main-content h1 {
 .checkmark {
     border-radius: 100px;
     margin-right: 16px;
-    height: 24px;
-    width: 24px;
+    height: 16px;
+    width: 16px;
     background-color: #ffffff;
     border-style: solid;
     border-width: 2px;
@@ -168,7 +168,7 @@ main-content h1 {
 }
 
 .task input:checked ~ .checkmark {
-  background-color: #7e7d7980;
+  background-color: #ffffff;
 }
 
 .checkmark:after {
@@ -182,12 +182,12 @@ main-content h1 {
 
 .task .checkmark:after {
     position: relative;
-    top: 4px;
-    left: 8px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
+    top: 3px;
+    left: 6px;
+    width: 3px;
+    height: 6px;
+    border: solid #7e7d79;
+    border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
 
