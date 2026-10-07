@@ -76,16 +76,3 @@
 
 ---
 
-## Strengths
-
-- All six provided icons are referenced from assets/ with relative paths and load correctly, and the nav icons sit in the sidebar list items.
-- Layout is clean: a grid for the page and sidebar/main columns (styles.css:83-86, 221-225), flex for the header, and a 300px sidebar that fills the rest of the width with the main column to its right.
-- Task checkboxes are custom CSS circles (styles.css:178-188) and a 1px border-bottom separates the tasks (styles.css:162-164).
-- Consistent kebab-case naming and a well-commented stylesheet, with Roboto loaded via Google Fonts and declared in the CSS.
-
-## Areas for Improvement
-
-- Wrap the nav list in a <nav> element. Right now the sidebar is a bare <aside> (index.html:31), so the navigation has no navigation landmark.
-- Fix the unclosed tag at index.html:15: `<div class="left-content"` is missing its `>`. The browser swallows the following `<button type="button" class="hamburger">` into the div's attributes, so the hamburger button element is never created (it is absent from facts.desktop.classes) and the .hamburger rule at styles.css:26 never applies. Validate your HTML to catch this.
-- Feedback only: the spec asks for the placeholder "Quick find". Yours is "Quick Find", which is accepted here, but match the spec's wording exactly. The check icon also has alt="menu icon" (index.html:25); use alt text that describes it, and add lang="en" to <html>.
-- Feedback only: the 30/5 counter, the border-bottom task separators and the rest of the layout work well. At 400px the page scrolls horizontally (facts.mobile400.hasHorizontalOverflow). This is not scored, but check the header's padding on small screens.
