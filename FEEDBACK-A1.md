@@ -4,7 +4,7 @@
 **Student:** grantajia  
 **Repository:** https://github.com/amg2318/assignment1-amg2318  
 **Graded commit:** aa61934fe84d (2026-10-01)  
-**Date:** 2026-10-05
+**Date:** 2026-10-06
 
 ---
 
@@ -65,12 +65,12 @@
 
 ### Best Practices Implementation (39/40 points)
 
-**Semantic HTML5 (14/15):** The sidebar is a bare <aside> with no <nav> inside, so the navigation list is not marked up as navigation. Wrap the <ul> in a <nav> (inside the aside if you like). <header>, <main>, <section> and a single <h1> are all used correctly.  
+**Semantic HTML5 (14/15):** The sidebar is a bare `<aside>` with no `<nav>` inside, so the navigation list is not marked up as navigation.  
   Evidence: `index.html:31`; `index.html:32`; `facts.desktop.sidebar.bareAside`
 
 **External Stylesheet (5/5):** meets the rubric line
 
-**Content/Presentation Separation (10/10):** No font, center, bgcolor, align, style attributes or <br> spacing runs; all styling lives in styles.css.
+**Content/Presentation Separation (10/10):** No font, center, bgcolor, align, style attributes or `<br>` spacing runs; all styling lives in styles.css.
 
 **Classes and IDs (10/10):** All classes and ids are descriptive (site-header, task-list, nav-items, current-tab), use one kebab-case convention, and no id is reused.
 
